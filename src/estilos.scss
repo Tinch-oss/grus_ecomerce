@@ -49,7 +49,7 @@ html , body , #root {
                 transition: all ease .5s;
                 }
 
-                :hover {
+                a:hover {
                     color: $accentColor;
                     border-bottom: 5px solid $accentColor;
                 

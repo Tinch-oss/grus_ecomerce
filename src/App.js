@@ -6,7 +6,7 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
     const nombre = 'Martin';
-    const apellido = 'Grus';
+    const apellido = 'Martin';
     return (
         <>
             <Header />
