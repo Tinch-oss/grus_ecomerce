@@ -1,9 +1,5 @@
-function Main() {
-    return (
-        <main>
-            <div></div>
-        </main>
-    );
+function Main(props) {
+    return <main className="container"></main>;
 }
 
 export default Main;

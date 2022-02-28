@@ -1,5 +1,5 @@
-function CardWidget() {
+function CartWidget() {
     return <div>CardWidget</div>;
 }
 
-export default CardWidget;
+export default CartWidget;

@@ -5,11 +5,13 @@ import Main from './components/Main.js';
 import ItemListContainer from './components/ItemListContainer';
 
 function App() {
+    const nombre = 'Martin';
+    const apellido = 'Martin';
     return (
         <>
             <Header />
             <Main />
-            <ItemListContainer />
+            <ItemListContainer nombre={nombre} apellido={apellido} />
             <Footer />
         </>
     );

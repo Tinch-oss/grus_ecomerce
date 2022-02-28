@@ -1,0 +1,38 @@
+
+
+Parametros en JS
+
+Props: son las propiedads que le pasamos a un copomponent como los parametros de una funcón en JS Vanilla. SON DE SÓLO LECTURA.
+
+se pasan como un atributo en HTML 
+
+function App() {
+    let edad = 41;
+    let nombre = "Martin";
+    return (
+        <>
+            <Header />
+            <Main nombre={nombre} /> !!! acá se usa y se le puden pasar varibles o datos.
+            <ItemListContainer />
+            <Footer />
+        </>
+    );
+}
+
+
+para que react lo entienda hay que decirle acá usa JS y eso se hace con {}
+
+y se usa en el componente como: 
+
+function Main(props) {
+    return (
+        <main>
+            <h2>Bienvenido {props.nombre}!</h2> !!!! acá es decir que se accede como un objeto porque es un objeto
+            <h3>Tengo</h3>
+        </main>
+    );
+}
+
+
+
+

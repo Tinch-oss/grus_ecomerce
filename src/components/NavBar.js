@@ -1,3 +1,5 @@
+import CartWidget from './CardWidget';
+
 /* import CardWidget from './CardWidget';
  */
 function NavBar() {
@@ -5,12 +7,18 @@ function NavBar() {
         <>
             <nav>
                 <ul>
-                    <li>Vínculo 1</li>
-                    <li>Vínculo 2</li>
-                    <li>Vínculo 3</li>
+                    <li>
+                        <a>Link1</a>
+                    </li>
+                    <li>
+                        <a>Link2</a>
+                    </li>
+                    <li>
+                        <a>Link3</a>
+                    </li>
                 </ul>
             </nav>
-            {/* <CardWidget /> */}
+            <CartWidget />
         </>
     );
 }
