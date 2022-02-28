@@ -5,8 +5,9 @@ function Header() {
     return (
         <>
             <header id="main-header">
-                <h1>Título</h1>
-                <NavBar />
+                <div className="container">
+                    <NavBar />
+                </div>
             </header>
         </>
     );

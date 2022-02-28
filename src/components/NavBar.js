@@ -5,20 +5,21 @@ import CartWidget from './CardWidget';
 function NavBar() {
     return (
         <>
+            <CartWidget />
+            <h2>ThorShoes</h2>
             <nav>
                 <ul>
                     <li>
-                        <a>Link1</a>
+                        <a id="home">Home</a>
                     </li>
                     <li>
-                        <a>Link2</a>
+                        <a>Monopatines Eléctricos</a>
                     </li>
                     <li>
-                        <a>Link3</a>
+                        <a>Bicicletas Eléctricas</a>
                     </li>
                 </ul>
             </nav>
-            <CartWidget />
         </>
     );
 }
