@@ -1,7 +1,5 @@
-import CartWidget from './CardWidget';
+import CartWidget from './CartWidget';
 
-/* import CardWidget from './CardWidget';
- */
 function NavBar() {
     return (
         <>
@@ -10,7 +8,9 @@ function NavBar() {
             <nav>
                 <ul>
                     <li>
-                        <a id="home">Home</a>
+                        <a id="home" className="active">
+                            Home
+                        </a>
                     </li>
                     <li>
                         <a>Monopatines Eléctricos</a>
