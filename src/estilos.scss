@@ -49,7 +49,7 @@ html , body , #root {
                 transition: all ease .5s;
                 }
 
-                a:hover {
+                :hover {
                     color: $accentColor;
                     border-bottom: 5px solid $accentColor;
                 
@@ -75,3 +75,26 @@ footer {
     text-align: center;
     font-size: .8rem;
 }
+
+.Container {
+    li {
+        list-style: none;
+
+        .greeting {
+            margin: 4rem auto;
+            width: fit-content;
+            font-size: 1rem;
+            font-weight: 700;
+
+        .greeting__span {
+            color: $accentColor;
+            font-style: italic;
+            font-size: 1.1rem;
+           
+           
+
+        }
+        }
+    }
+}
+

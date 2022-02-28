@@ -6,12 +6,12 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
     const nombre = 'Martin';
-    const apellido = 'Martin';
+    const apellido = 'Grus';
     return (
         <>
             <Header />
-            <Main />
             <ItemListContainer nombre={nombre} apellido={apellido} />
+            <Main />
             <Footer />
         </>
     );
