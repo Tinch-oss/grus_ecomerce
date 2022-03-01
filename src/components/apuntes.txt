@@ -33,6 +33,55 @@ function Main(props) {
     );
 }
 
+------------------------------------------------------------
+
+Clase 05
+
+
+    Reglas de los componentes: 
+
+1- Todos los componentes son funciones 
+2-Todos los componentes arracnan en mayuscula
+3-Todos lso componente tienen que retornar un elemento
+4-Todos lso componentes pueden recibir N cantidad de props de cualquier valor
+5- Todos los componentes pueden tener estado y ciclo de vida
+ 
+
+Ciclo de vida: 
+
+1) Nacer que se ejecuto o rendirizo por primera vez o se está montando (se muestra en pantalla). MOUNT es la palabra oficial.
+2) Si se modifica o se actualiza: UPDATE.
+3) Morir se desmonta, desaparece. UNMOUNT.
+
+STATE: son varialbes que viven adentro de un componente que cuando se modifican Reac lo vuela rendirizar. 
+
+
+en react onClick es un addEventLisener 
+
+entonces un <button onClick={()=>{ console.log("click") }}
+
+sino se puede poner un click en el botón con una función:
+
+const handleClick = () =Z {
+    console.log("click")
+}
+
+<button onClick={handleClick}>aumentar</button>
+
+React propone un virtual DOM.
+
+Ir al DOM es muy costoso. Por eso React da el concepto de estado. A las variables las hace como status. Si uno modifica ese estado el componente se vuelve a redibujar. Por cambiar el estado se modifica el virtual DOM y va a acumlando todos los cambios. Te puede renderizar el componente o sólo una parte (esto lo vemos mejor más adelante).
+
+Para tener estado en un componente se necesita un HOOK. Un hook es una función. 
+
+Hook: adaptan un componente funcional que tenga funcionales que antes no tenía. Todos los Hooks arrancan con use. Después de importarlo lo tenes que usar. Ningún hook puede estar afuera de un componente. Ningún puede estar en una situación condional o de bucle. 
+
+Primer hook es el useState. Siempre retorna un array con dos elementos, la primera es el valor del estado y la segunda es la función que tendría que ejectura si lo quisieras cambiar. 
+
+
+
+
+
 
 
 
