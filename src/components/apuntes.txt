@@ -53,7 +53,7 @@ Ciclo de vida:
 2) Si se modifica o se actualiza: UPDATE.
 3) Morir se desmonta, desaparece. UNMOUNT.
 
-STATE: son varialbes que viven adentro de un componente que cuando se modifican Reac lo vuela rendirizar. 
+STATE: son varialbes que viven adentro de un componente que cuando se modifican, React lo vuela rendirizar (vuevle a renderizar todas las partes dónde están las variables). 
 
 
 en react onClick es un addEventLisener 
@@ -72,11 +72,31 @@ React propone un virtual DOM.
 
 Ir al DOM es muy costoso. Por eso React da el concepto de estado. A las variables las hace como status. Si uno modifica ese estado el componente se vuelve a redibujar. Por cambiar el estado se modifica el virtual DOM y va a acumlando todos los cambios. Te puede renderizar el componente o sólo una parte (esto lo vemos mejor más adelante).
 
-Para tener estado en un componente se necesita un HOOK. Un hook es una función. 
+Sólo por cambiar el estado se va a modicar el virtual DOM. El estado es algo que está en cambio. Puede ser por el usuario o algo por ejemplo como un formulario, o el carrito de compras, o los productos. No todos los componentes van a tener estado, porque quizás no lo necesiten. Un componente que no lo necesite sería uno representacional (como el footer). El container suele estar asociado con un estado, y le suele pasar al componente representacional. 
+
+Para tener --estado-- en un --componente-- se necesita un HOOK. Un hook es una función. 
 
 Hook: adaptan un componente funcional que tenga funcionales que antes no tenía. Todos los Hooks arrancan con use. Después de importarlo lo tenes que usar. Ningún hook puede estar afuera de un componente. Ningún puede estar en una situación condional o de bucle. 
 
+- useState y useEffect ya vienen instalados Reack. Uno se puede crear sus propios hooks y hay librerias que viene con hooks.
+
 Primer hook es el useState. Siempre retorna un array con dos elementos, la primera es el valor del estado y la segunda es la función que tendría que ejectura si lo quisieras cambiar. 
+
+CLASS: props + state + lifcycle
+
+Hooks: Reglas generales para todos.
+
+1. Se importan de react así (ejemplo con useState): import {useState} from "react". Si queremos uno más le ponemos coma y agregamos
+2. Todos son funciones. Se tienen que ejecutar. No se importa en un archivo que no se usa. 
+3. Ningún Hook puede estar afuera de un componente. 
+4. Ningún Hook puede estar en una situación condicional (if) o de bucle (while).
+
+--useState da un retorno: un array con dos elementos: 1) el valor áctual de tu estado 2) la función que vos tendrías que ejecutar si lo qusieras cambiar. 
+
+
+------------------------------------------------------------------------------------------------------------
+
+IMAGENES
 
 
 
