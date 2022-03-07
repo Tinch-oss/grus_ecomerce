@@ -13,7 +13,7 @@ function ItemListContainer(greeting) {
                     </p>
                 </li>
             </ul>
-            <ItemCount initial={0} stock={5} />
+            <ItemCount initial={0} stock={5} stockInicial={5} />
         </>
     );
 }
