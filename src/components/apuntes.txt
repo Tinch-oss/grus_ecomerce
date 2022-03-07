@@ -45,7 +45,11 @@ Clase 05
 3-Todos lso componente tienen que retornar un elemento
 4-Todos lso componentes pueden recibir N cantidad de props de cualquier valor
 5- Todos los componentes pueden tener estado y ciclo de vida
- 
+6- No tienen cilco de vida real sino que son funciones que se vuelven a ejecturar por completo si: 
+        - se modifica el estado  
+        - se reciben nuevas props   
+        - se reinicia el padre
+        - se modifica el contexto
 
 Ciclo de vida: 
 
@@ -96,8 +100,36 @@ Hooks: Reglas generales para todos.
 
 ------------------------------------------------------------------------------------------------------------
 
-IMAGENES
+6. Promises, asincronía y MAP
 
+Imagenes
+
+se ponen con la etiqueta <img />
+y se les pone el src. Las levanta de la carpeta public. 
+Si se las pone en otra carpeta hay que navegar a esa carpeta. 
+
+
+Los estados siempre quedan con el último valor. 
+
+Las funciones tiene que estar 
+
+------------ UseEffect -------------------
+
+Suelen ir pedidos a una api rest, conectarte a un servidor. Se usan para cosas que tardan mucho en el tiempo, porque queres que primero el usuario vea algo y después traes lo otro. No tiene retorno. Con lo cual no sirve para ponerlo en un a variable. 
+
+El use effect toma dos parametros el a es una función y el b es un array. El primer parametro es obligatorio, el segundo es opcional. 
+
+(
+setTimeout toma dos parametros, una función y milisegundos. 
+)
+
+------MAP-----------
+
+El map es un tiene un callback, donde es la variable y el indice. Reever. 
+
+---------Promesas-------------
+
+Promesas: son objetos que prometen una funcionalidad que dura en el tiempo, pero te "avisan" con su método .then() cuando terminó todo bien o con su método .catch() cuando terminó todo mal. Son encadenables pueden haber muchos .then() y .catch().
 
 
 
