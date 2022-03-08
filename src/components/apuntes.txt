@@ -132,6 +132,86 @@ El map es un tiene un callback, donde es la variable y el indice. Reever.
 Promesas: son objetos que prometen una funcionalidad que dura en el tiempo, pero te "avisan" con su método .then() cuando terminó todo bien o con su método .catch() cuando terminó todo mal. Son encadenables pueden haber muchos .then() y .catch().
 
 
+---------------------------------------------------------------------------------------------------------
+
+Clase de Fetch-Ajax
+
+AJAX: Async Javascript and XML
+
+Async o asincronico es codigo no bloqueante. Un codigo bloqueante, inicia y tiene que terminar y mientras tanto no se puede hacer otra cosa. Async empieza y mientras se completa la tarea se puede hacer otra cosa. 
+
+Ajax es una tecnología que se agrega a JS para trabajar con XML (o un html o un txt).
+
+Historia: 
+
+XHR (XMLHttpRequest) _ XHMLgttp request es una clase de objeto que nos permite hacer peticiones a un servidor usando el protocolo HTTP. Se le decía ajax, pero en realidad se llamaba XHR. 
+
+Se armó un problema con el callback of hell. No se sabía cuanto tiempo iba a demorar el pedido. La manera de notificar era con callback. Para hacer el último pedido, necesitaba el segundo y para hacer el segundo necesitabas el primero. Y era en ese orden. Cuanto más grande el servidor peor era todo esto. 
+
+-----------FETCH: 
+-fetch es la implementación de de XHR + Promesa.Es decir sigue siendo AJAX. 
+
+HTTP: Hypertext Transfer Protocol. Viene instalado en las maquinas. 
+Este protocolo se trata de que hay dos maquinas (o dos servicios):
+
+a) cliente / request (necesito url y un método)
+b) servidor / response 
+
+Con JS por lo general uno suele ser el cliente y el servidor va a ser otra maquina (o quizás nuestra misma maquina). 
+
+El cliente no accede a la base de datos directamente, accede al backend y el back end accede a la base de datos y de ahí al cliente. 
+
+Si queres intercambiar información con una maquina minimo necesitas saber dónde esta: con una ip o una url. 
+
+a) Cliente / request - Método / verbo (get - post - put )
+
+Headers típicos:
+    -Accept: un header que te sirve para configuar el tipo de contenido que quiere que te devuelva el servidor. 
+
+    -Body / Payload: es el cuerpo de la peticion que se envia la servidor. Por ejemplo si subo excel a una web.     
+
+    cuando se use AJAX se recomienda mantener abierta la pestaña network. 
+
+b) servidor
+    -Responde con: un código / un mensaje
+    1xx Información
+    2XX Exito
+    200 = todo bien. 
+    201 = usuario creado bien
+    3xx Redirección
+    4xx Error Cliente
+    400 Bad request (hiciste mal el pedido)
+    403 / 401  No autorizado. Vos no estas autorizado. 
+    404 = no encontrado
+    405 = vos lo pediste como get, pero el servidor estaba esperando un post (o algo así)
+    500 = error interno del servidor
+
+Headers:
+    -content-type: el tipo 
+    -contet-length: se mide en bytes
+
+--------
+
+
+FETCH
+
+fetch() tiene dos parametros. a un string y el segundo es un objeto de configuración. En el primer parametro se puee poner una ip o una url. El segundo sería configurar cómo si es get o es post, que headers etc.
+
+Por ejectura fetch obtengo un ojeto del tipo promesa. Y entonces puedo usar .then() y .catch()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
