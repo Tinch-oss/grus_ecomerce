@@ -1,15 +1,25 @@
 import Item from './Item';
 
-function ItemList(productosIniciales) {
+function ItemList({ productosIniciales }) {
     return (
         <>
             <ul>
                 {productosIniciales.map((producto, indice) => {
-                    return <li>{productosIniciales.marca}</li>;
+                    return (
+                        <li key={indice}>
+                            <Item
+                                id={producto.id}
+                                marca={producto.marca}
+                                modelo={producto.modelo}
+                                stock={producto.stock}
+                                precio={producto.precio}
+                            />
+                        </li>
+                    );
                 })}
             </ul>
 
-            <Item />
+            {/* <Item productosIniciales={productosIniciales} /> */}
         </>
     );
 }

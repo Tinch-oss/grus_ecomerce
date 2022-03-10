@@ -36,19 +36,17 @@ function ItemListContainer(greeting) {
             setTimeout(() => {
                 res(productos);
             }, 2000);
-
-            promesa
-                .then((respuestaDeLaApi) => {
-                    setProductos(productosIniciales);
-                })
-                .catch((errorDeLaApi) => {})
-                .finally(() => {
-                    setLoading(false);
-                });
         });
+        promesa
+            .then((respuestaDeLaApi) => {
+                setProductos(productosIniciales);
+            })
+            .catch((errorDeLaApi) => {})
+            .finally(() => {
+                setLoading(false);
+            });
     });
 
-    console.log(productos);
     return (
         <>
             <ul className="Container">
