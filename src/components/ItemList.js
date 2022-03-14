@@ -19,7 +19,7 @@ function ItemList({ productosIniciales }) {
                 })}
             </ul>
 
-            {/* <Item productosIniciales={productosIniciales} /> */}
+            {/*  {<Item productosIniciales={productosIniciales} />} */}
         </>
     );
 }

@@ -34,12 +34,12 @@ function ItemListContainer(greeting) {
     useEffect(() => {
         const promesa = new Promise((res, rej) => {
             setTimeout(() => {
-                res(productos);
+                res(productosIniciales);
             }, 2000);
         });
         promesa
             .then((respuestaDeLaApi) => {
-                setProductos(productosIniciales);
+                setProductos(setProductos(respuestaDeLaApi));
             })
             .catch((errorDeLaApi) => {})
             .finally(() => {
